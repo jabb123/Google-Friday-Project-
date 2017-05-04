@@ -36,4 +36,27 @@ if NumberNames== 4:
 			generate333= (random.choice(names3))
 			print(generate333)
 			print("\n Thanks for Playing!")
+print(NumberNames)
+if NumberNames== 5:
+	print("Please enter your five names")
+	names4= [str(raw_input("Name1- ")), str(raw_input("Name2- ")), str(raw_input("Name3- ")), str(raw_input("Name4- ")), str(raw_input("Name5- "))]
+	generate4= (random.choice(names4))
+	print(generate4)
+	draw3= str(raw_input("Would you like to draw again?-"))
+	if(draw3== "yes"):
+		names4.remove(generate4)
+		generate44= (random.choice(names4))
+		print(generate44)
+		draw33= str(raw_input("Would you like to draw again?- "))
+		if(draw33=="yes"):
+			names4.remove(generate44)
+			generate444=(random.choice(names4))
+			print(generate444)
+			draw333= str(raw_input("Would you like to draw again?- "))
+			if (draw333=="yes"):
+				names4.remove(generate444)
+				generate4444=(random.choice(names4))
+				print(generate4444)
+				print("\nThanks for playing!")
 
+		
